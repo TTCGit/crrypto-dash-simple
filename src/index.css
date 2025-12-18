@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@theme {
+  /* Brand Colors */
+  --color-primary: #6366f1; /* Indigo - Main brand color */
+  --color-primary-dark: #4f46e5; /* Darker indigo for hovers */
+  --color-secondary: #8b5cf6; /* Purple - Accent color */
+  --color-accent: #06b6d4; /* Cyan - Highlights */
+
+  /* Background Colors */
+  --color-bg-primary: #0f172a; /* Dark blue-gray - Main background */
+  --color-bg-secondary: #1e293b; /* Lighter dark - Cards, containers */
+  --color-bg-tertiary: #334155; /* Medium gray - Inputs, dropdowns */
+  --color-bg-hover: #475569; /* Hover state */
+
+  /* Text Colors */
+  --color-text-primary: #f1f5f9; /* Almost white - Main text */
+  --color-text-secondary: #cbd5e1; /* Light gray - Secondary text */
+  --color-text-muted: #94a3b8; /* Muted gray - Labels, hints */
+  --color-text-disabled: #64748b; /* Disabled text */
+
+  /* Status Colors - Price Changes */
+  --color-green: #22c55e; /* Green - Positive/Gains */
+  --color-green-bg: #16a34a; /* Dark green - Backgrounds */
+  --color-red: #ef4444; /* Red - Negative/Losses */
+  --color-red-bg: #dc2626; /* Dark red - Backgrounds */
+  --color-yellow: #eab308; /* Yellow - Warning/Neutral */
+
+  /* Border Colors */
+  --color-border: #334155; /* Default border */
+  --color-border-light: #475569; /* Lighter border */
+  --color-border-focus: #6366f1; /* Focus state (primary) */
+
+  /* Component-Specific */
+  --color-card: #1e293b; /* Card background */
+  --color-input: #334155; /* Input background */
+  --color-dropdown: #1e293b; /* Dropdown background */
+  --color-button: #6366f1; /* Button background */
+  --color-button-hover: #4f46e5; /* Button hover */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
