@@ -30,7 +30,7 @@ export function AppProvider({ children }) {
     fetchIcons();
   }, [limit]);
 
-  const searchCoins = coins
+  const filteredCoins = coins
     .filter(
       (coin) =>
         coin.name.toLowerCase().includes(searchTerm.toLocaleLowerCase()) ||
@@ -57,13 +57,15 @@ export function AppProvider({ children }) {
   return (
     <AppContext.Provider
       value={{
-        coins: searchCoins,
+        coins: filteredCoins,
         searchTerm,
         setSearchTerm,
         sortBy,
         setSortBy,
         limit,
         setLimit,
+        loading,
+        error,
       }}>
       {children}
     </AppContext.Provider>
